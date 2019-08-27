@@ -54,6 +54,14 @@ Although it is perfectly OK to use the provided *agent.exe*, you can very easily
   - To get the standard agent executable: `C:\Windows\Microsoft.NET\Framework64\v4.0.30319\csc.exe /out:agent.exe *.cs`
   - To get the debug version: `C:\Windows\Microsoft.NET\Framework64\v4.0.30319\csc.exe /define:DEBUG /out:agent_debug.exe *.cs`
 
+Docker Run & Build
+------------
+
+```
+$ docker build -t xshuden/webdavc2 .
+$ docker run --rm -it -v $(pwd):/stagers xshuden/webdavc2
+```
+
 DISCLAIMER
 ----------------
 This tool is intended to be used in a legal and legitimate way only:
